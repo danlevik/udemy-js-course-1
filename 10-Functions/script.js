@@ -1,14 +1,115 @@
 'use strict';
 
+// let arr = [7, 5, 4, 6, 3, 2, 1];
+// let i = 5;
+// let c = 0;
+// let j;
+// for (let k = 0; k < 100; k++) {
+//   j = arr[i];
+//   arr[i] = i;
+//   i = j;
+//   c = c + i;
+// }
+// console.log(c);
+
+// let x = [2, 7, 6, 1, 9, 5, 8, 3, 4, 0];
+// let k = 0;
+// for (let i = 1; i <= 10; i++) {
+//   if (x[i] % 2 == 1) {
+//     k += 1;
+//   }
+// }
+// console.log(k);
+
+// let x = [131, 42, 99, 54987529, 13131, 111111, 54, 76, 454, 333];
+
+// let k = x[1];
+
+// for (let i = 2; i < 10; i++) {
+//   if (x[i] < k) {
+//     k = x[i];
+//   }
+// }
+
+// console.log(k);
+
+// 5 4 6
+
+// let k = 12;
+// let m = 16;
+// let p = 4;
+// let z;
+
+// if (k < m && p < k) {
+//   z = k / p;
+// } else {
+//   z = m / p;
+// }
+// console.log(z);
+
+// let a1 = 2;
+// let b1 = 7;
+// let a2 = 6;
+// let b2 = 8;
+// let b3;
+// let a3;
+// if (b1 + b2 >= 10) {
+//   b3 = b1 + b2 - 10;
+//   a3 = a1 + a2 + 1;
+// } else {
+//   b3 = b1 + b2;
+//   a3 = a1 + a2;
+// }
+// console.log(a3, b3);
+
+// let a = 1819;
+// let b = 18 * 10 + 9;
+// a = (10 * b - a) % 100;
+// console.log(a, b);
+
+// let n = 31;
+// let xs = 31;
+// let x = 0;
+// let y;
+// while (Math.abs(x - xs) > 0.00000001) {
+//   xs = x;
+//   y = 0.57 / n;
+//   x = (5.4 * Math.sin(y)) / (9 * (1 + y) * (4 - (1 + y) * (1 + y)) - 27);
+//   n = n + 0.7;
+// }
+// console.log(x);
+
+let a = [3, 3, 1, 1, 1];
+let b = [3, 4, 3, 2, 1];
+let k = 2333;
+
+let j = 1;
+let i = 0;
+for (let zz = 0; zz < k; zz++) {
+  j = 1;
+  i = 0;
+  while (j == 1 && i < 6) {
+    i = i + 1;
+    a[i] = a[i] + 1;
+    if (a[i] <= b[i]) {
+      j = 0;
+    } else {
+      a[i] = 0;
+    }
+  }
+}
+
+console.log(a);
+
 // 014 Challenge 2
 
-(function () {
-  const header = document.querySelector('h1');
-  header.style.color = 'red';
-  document.body.addEventListener('click', function () {
-    header.style.color = 'blue';
-  });
-})();
+// (function () {
+//   const header = document.querySelector('h1');
+//   header.style.color = 'red';
+//   document.body.addEventListener('click', function () {
+//     header.style.color = 'blue';
+//   });
+// })();
 
 // // 013 More closures examples
 
